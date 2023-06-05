@@ -13,7 +13,7 @@ class _InfoCarddState extends State<InfoCardd>with SingleTickerProviderStateMixi
   late AnimationController _animationController;
   late Animation<double> animation;
 
-  bool isSideMenuClose = true;
+  bool isSideMenuClose = false;
   bool status = true;
 
   @override
@@ -36,7 +36,7 @@ class _InfoCarddState extends State<InfoCardd>with SingleTickerProviderStateMixi
       setState(() {});
     });
 
-    animation = Tween<double>(begin:0,end: 1 ).animate(CurvedAnimation(parent: _animationController, curve: Curves.fastOutSlowIn));
+    animation = Tween<double>(begin:1,end: 0 ).animate(CurvedAnimation(parent: _animationController, curve: Curves.fastOutSlowIn));
     super.initState();
   }
 

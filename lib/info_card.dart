@@ -17,6 +17,8 @@ class _InfoCarddState extends State<InfoCardd>with SingleTickerProviderStateMixi
   bool status = true;
 
   @override
+
+  //ini tambahan
   //  @override
   //   void initState() {
   //      super.initState();
